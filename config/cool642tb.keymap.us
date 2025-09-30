@@ -109,10 +109,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC  &kp F7  &kp F8  &kp F9  &kp F12                              &trans         &JP_UNDERSCORE  &JP_PLUS  &kp MINUS     &kp JP_EQUAL
-&trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans          &trans    &kp LC(SEMI)  &trans
-&trans   &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans          &trans    &trans        &trans
-&trans   &trans  &trans  &trans  &trans   &trans        &trans        &trans                                                 &trans
+&kp ESC  &kp F7  &kp F8  &kp F9  &kp F12                              &trans         &trans  &trans  &kp MINUS     &kp EQUAL
+&trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans  &trans  &kp LC(SEMI)  &trans
+&trans   &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans  &trans  &trans        &trans
+&trans   &trans  &trans  &trans  &trans   &trans        &trans        &trans                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -120,7 +120,7 @@
 
         NUM {
             bindings = <
-&kp TAB                  &kp N7        &kp N8        &kp N9        &kp JP_EQUAL                     &kp HOME  &kp PAGE_DOWN          &kp PAGE_UP      &kp END     &kp DELETE
+&kp TAB                  &kp N7        &kp N8        &kp N9        &kp EQUAL                     &kp HOME  &kp PAGE_DOWN          &kp PAGE_UP      &kp END     &kp DELETE
 &mt LCTRL KP_ASTERISK    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &kp LEFT  &kp DOWN_ARROW         &kp UP_ARROW     &kp RIGHT   &trans
 &mt LEFT_SHIFT KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans    &kp RG(C_VOLUME_DOWN)  &kp C_VOLUME_UP  &kp K_MUTE  &trans
 &trans                   &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans  &trans  &trans                                                        &trans
@@ -131,10 +131,10 @@
 
         Symbol {
             bindings = <
-&kp JP_BACKQUOTE  &kp JP_AMPERSAND   &kp JP_ASTERISK   &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp NUBS
-&kp JP_TILDE      &kp DLLR           &kp PRCNT         &kp JP_CARET  &trans  &trans  &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_COLON  &kp SEMI
-&trans            &kp EXCL           &kp JP_AT         &kp HASH      &trans  &trans  &trans  &trans  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_DQT    &kp JP_SQT
-&trans            &trans             &trans            &trans        &trans  &trans  &trans  &trans                                                  &trans
+&kp GRAVE  &kp AMPS  &kp STAR   &trans     &trans                  &trans  &kp LPAR  &kp RPAR  &kp PIPE   &kp BSLH
+&kp TILDE  &kp DLLR  &kp PRCNT  &kp CARET  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp COLON  &kp SEMI
+&trans     &kp EXCL  &kp AT     &kp POUND  &trans  &trans  &trans  &trans  &kp LBRC  &kp RBRC  &kp DQT    &kp SQT
+&trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN_ARROW>;
