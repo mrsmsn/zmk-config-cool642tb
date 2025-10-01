@@ -12,15 +12,15 @@
 #define JP_SQT          AMPERSAND         // '
 #define JP_EQUAL        UNDER             // =
 #define JP_CARET        EQUAL             // ^
-#define JP_YEN          0x89              // ¥
+#define JP_YEN          INT_YEN           // ¥
 #define JP_PLUS         COLON             // +
 #define JP_TILDE        PLUS              // ~
-#define JP_PIPE         LS(0x89)          // |
+#define JP_PIPE         LS(INT_YEN)       // |
 #define JP_AT           LEFT_BRACKET      // @
 #define JP_COLON        SINGLE_QUOTE      // :
 #define JP_ASTERISK     DOUBLE_QUOTES     // *
 #define JP_BACKQUOTE    LEFT_BRACE        // `
-#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_UNDERSCORE   LS(INT_RO)        // _
 #define JP_LBRACKET     RIGHT_BRACKET     // [
 #define JP_RBRACKET     BACKSLASH         // ]
 #define JP_LPAREN       ASTERISK          // (
@@ -109,10 +109,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC  &kp F7  &kp F8  &kp F9  &kp F12                              &trans         &trans  &trans  &kp MINUS     &kp EQUAL
-&trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans  &trans  &kp LC(SEMI)  &trans
-&trans   &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans  &trans  &trans        &trans
-&trans   &trans  &trans  &trans  &trans   &trans        &trans        &trans                                       &trans
+&kp ESC  &kp F7  &kp F8  &kp F9  &kp F12                              &trans         &kp LS(MINUS)   &kp LS(EQUAL) &kp MINUS     &kp EQUAL
+&trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans          &trans        &kp LC(SEMI)  &trans
+&trans   &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans          &trans        &trans        &trans
+&trans   &trans  &trans  &trans  &trans   &trans        &trans        &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
