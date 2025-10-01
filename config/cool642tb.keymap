@@ -109,10 +109,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC  &kp F7  &kp F8  &kp F9  &kp F12                              &trans         &kp JP_UNDERSCORE  &kp JP_PLUS  &kp MINUS     &kp JP_EQUAL
-&trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans             &trans       &kp LC(SEMI)  &trans
-&trans   &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans             &trans       &trans        &trans
-&trans   &trans  &trans  &trans  &trans   &trans        &trans        &trans                                                       &trans
+&kp ESC  &kp F7      &kp F8  &kp F9  &kp F12                              &trans         &kp JP_UNDERSCORE  &kp JP_PLUS  &kp MINUS     &kp JP_EQUAL
+&trans   &kp LA(F4)  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans             &trans       &kp LC(SEMI)  &trans
+&trans   &kp F1      &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans             &trans       &trans        &trans
+&trans   &trans      &trans  &trans  &trans   &trans        &trans        &trans                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
