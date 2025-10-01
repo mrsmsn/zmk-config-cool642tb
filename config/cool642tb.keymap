@@ -131,7 +131,7 @@
 
         Symbol {
             bindings = <
-&kp JP_BACKQUOTE  &kp JP_AMPERSAND   &kp JP_ASTERISK   &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp NUBS
+&kp JP_BACKQUOTE  &kp JP_AMPERSAND   &kp JP_ASTERISK   &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp JP_YEN
 &kp JP_TILDE      &kp DLLR           &kp PRCNT         &kp JP_CARET  &trans  &trans  &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_COLON  &kp SEMI
 &trans            &kp EXCL           &kp JP_AT         &kp HASH      &trans  &trans  &trans  &trans  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_DQT    &kp JP_SQT
 &trans            &trans             &trans            &trans        &trans  &trans  &trans  &trans                                                  &trans
