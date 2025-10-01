@@ -99,20 +99,20 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R            &kp T                                            &kp Y      &kp U  &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S         &kp D         &kp F            &kp G        &trans            &trans            &kp H      &kp J  &kp K      &kp L       &mt RCTRL ENTER
+&mt LCTRL A       &kp S         &kp D         &kp F            &kp G        &to 5             &trans            &kp H      &kp J  &kp K      &kp L       &mt RCTRL ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V            &kp B        &kp BACKSPACE     &kp DELETE        &kp N      &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 BACKSPACE  &lt 2 SPACE  &lt 3 LANGUAGE_2  &lt 3 LANGUAGE_1  &lt 2 TAB                                &kp ESCAPE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp UP DOWN_ARROW>;
         };
 
-        FUNCTION {
+        JIS_FUNCTION {
             bindings = <
-&kp ESC  &kp F7      &kp F8  &kp F9  &kp F12                              &trans         &kp JP_UNDERSCORE  &kp JP_PLUS  &kp MINUS     &kp JP_EQUAL
-&trans   &kp LA(F4)  &kp F5  &kp F6  &kp F11  &trans        &bt BT_SEL 2  &trans         &trans             &trans       &kp LC(SEMI)  &trans
-&trans   &kp F1      &kp F2  &kp F3  &kp F10  &bt BT_SEL 1  &bt BT_SEL 3  &kp LG(LS(S))  &trans             &trans       &trans        &trans
-&trans   &trans      &trans  &trans  &trans   &trans        &trans        &trans                                                       &trans
+&kp ESC       &kp F7        &kp F8        &kp F9  &kp F12                                     &trans         &kp JP_UNDERSCORE  &kp JP_PLUS  &kp MINUS     &kp JP_EQUAL
+&trans        &kp LA(F4)    &kp F5        &kp F6  &kp F11       &trans        &trans          &trans         &trans             &trans       &kp LC(SEMI)  &trans
+&trans        &kp F1        &kp F2        &kp F3  &kp F10       &trans        &bt BT_CLR_ALL  &kp LG(LS(S))  &trans             &trans       &trans        &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -120,7 +120,7 @@
 
         NUM {
             bindings = <
-&kp TAB                  &kp N7        &kp N8        &kp N9        &kp JP_EQUAL                  &kp HOME  &kp PAGE_DOWN          &kp PAGE_UP      &kp END     &kp DELETE
+&kp TAB                  &kp N7        &kp N8        &kp N9        &kp KP_EQUAL                  &kp HOME  &kp PAGE_DOWN          &kp PAGE_UP      &kp END     &kp DELETE
 &mt LCTRL KP_ASTERISK    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &kp LEFT  &kp DOWN_ARROW         &kp UP_ARROW     &kp RIGHT   &trans
 &mt LEFT_SHIFT KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans    &kp RG(C_VOLUME_DOWN)  &kp C_VOLUME_UP  &kp K_MUTE  &trans
 &trans                   &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans  &trans  &trans                                                        &trans
@@ -129,12 +129,12 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        Symbol {
+        JIS_SYMBOL {
             bindings = <
-&kp JP_BACKQUOTE  &kp JP_AMPERSAND   &kp JP_ASTERISK   &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp JP_YEN
-&kp JP_TILDE      &kp DLLR           &kp PRCNT         &kp JP_CARET  &trans  &trans  &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_COLON  &kp SEMI
-&trans            &kp EXCL           &kp JP_AT         &kp HASH      &trans  &trans  &trans  &trans  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_DQT    &kp JP_SQT
-&trans            &trans             &trans            &trans        &trans  &trans  &trans  &trans                                                  &trans
+&kp JP_BACKQUOTE  &kp JP_AMPERSAND  &kp JP_ASTERISK  &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp JP_YEN
+&kp JP_TILDE      &kp DLLR          &kp PRCNT        &kp JP_CARET  &trans  &trans  &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_COLON  &kp SEMI
+&trans            &kp EXCL          &kp JP_AT        &kp HASH      &trans  &trans  &trans  &trans  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_DQT    &kp JP_SQT
+&trans            &trans            &trans           &trans        &trans  &trans  &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN_ARROW>;
@@ -151,26 +151,37 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        SCROLL {
+        US_default {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp Q             &kp W         &kp E         &kp R            &kp T                                            &kp Y      &kp U  &kp I      &kp O       &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F            &kp G        &to 0             &trans            &kp H      &kp J  &kp K      &kp L       &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V            &kp B        &kp BACKSPACE     &kp DELETE        &kp N      &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 BACKSPACE  &lt 2 SPACE  &lt 7 LANGUAGE_2  &lt 7 LANGUAGE_1  &lt 2 TAB                                &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_6 {
+        US_FUNCTION {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp ESC       &kp F7        &kp F8        &kp F9  &kp F12                                     &trans         &kp JP_UNDERSCORE  &kp JP_PLUS  &kp MINUS     &kp JP_EQUAL
+&trans        &kp LA(F4)    &kp F5        &kp F6  &kp F11       &trans        &trans          &trans         &trans             &trans       &kp LC(SEMI)  &trans
+&trans        &kp F1        &kp F2        &kp F3  &kp F10       &trans        &bt BT_CLR_ALL  &kp LG(LS(S))  &trans             &trans       &trans        &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        US_SYMBOL {
+            bindings = <
+&kp GRAVE  &kp AMPS  &kp STAR   &trans     &trans                  &trans  &kp LPAR  &kp RPAR  &kp PIPE   &kp BSLH
+&kp TILDE  &kp DLLR  &kp PRCNT  &kp CARET  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp COLON  &kp SEMI
+&trans     &kp EXCL  &kp AT     &kp HASH   &trans  &trans  &trans  &trans  &kp LBRC  &kp RBRC  &kp DQT    &kp SQT
+&trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans                                 &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp UP DOWN_ARROW>;
         };
     };
 };
