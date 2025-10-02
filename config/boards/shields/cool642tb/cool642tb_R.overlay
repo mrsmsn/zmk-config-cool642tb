@@ -18,11 +18,11 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <
-        17
-        18
-        30
-        31
-        32
+        17 // H
+        18 // J
+        30 // M
+        31 // <
+        32 // >
     >;
 };
 
@@ -31,7 +31,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 4 10000>;
+        input-processors = <&zip_temp_layer 8 10000>;
     };
 };
 
