@@ -139,10 +139,10 @@
 
         JIS_NUM {
             bindings = <
-&kp TAB                  &kp N7        &kp N8        &kp N9        &kp JP_EQUAL                  &kp HOME  &kp PAGE_DOWN          &kp PAGE_UP      &kp END     &kp DELETE
-&mt LCTRL KP_ASTERISK    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &kp LEFT  &kp DOWN_ARROW         &kp UP_ARROW     &kp RIGHT   &trans
-&mt LEFT_SHIFT KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans    &kp RG(C_VOLUME_DOWN)  &kp C_VOLUME_UP  &kp K_MUTE  &trans
-&trans                   &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans  &trans  &trans                                                        &trans
+&kp TAB                  &kp N7        &kp N8        &kp N9        &kp JP_EQUAL                  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP      &kp END     &kp DELETE
+&mt LCTRL KP_ASTERISK    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT   &trans
+&mt LEFT_SHIFT KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans    &kp C_VOL_DN    &kp C_VOL_UP     &kp K_MUTE  &trans
+&trans                   &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans  &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -183,10 +183,10 @@
 
         US_NUM {
             bindings = <
-&kp TAB                  &kp N7        &kp N8        &kp N9        &kp EQUAL                     &kp HOME  &kp PAGE_DOWN          &kp PAGE_UP      &kp END     &kp DELETE
-&mt LCTRL KP_ASTERISK    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &kp LEFT  &kp DOWN_ARROW         &kp UP_ARROW     &kp RIGHT   &trans
-&mt LEFT_SHIFT KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans    &kp RG(C_VOLUME_DOWN)  &kp C_VOLUME_UP  &kp K_MUTE  &trans
-&trans                   &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans  &trans  &trans                                                        &trans
+&kp TAB                  &kp N7        &kp N8        &kp N9        &kp EQUAL                     &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP  &kp END     &kp DELETE
+&mt LCTRL KP_ASTERISK    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW &kp RIGHT   &trans
+&mt LEFT_SHIFT KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans    &kp C_VOL_DN    &kp C_VOL_UP &kp K_MUTE  &trans
+&trans                   &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans  &trans  &trans                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
