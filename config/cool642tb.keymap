@@ -150,8 +150,8 @@
 
         JIS_SYMBOL {
             bindings = <
-&kp JP_BACKQUOTE  &kp JP_AMPERSAND  &kp JP_ASTERISK  &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp JP_YEN
-&kp JP_TILDE      &kp DLLR          &kp PRCNT        &kp JP_CARET  &trans  &trans  &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_COLON  &kp SEMI
+&kp JP_TILDE      &kp JP_AMPERSAND  &kp JP_ASTERISK  &trans        &trans                  &trans  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE   &kp JP_YEN
+&kp JP_BACKQUOTE  &kp DLLR          &kp PRCNT        &kp JP_CARET  &trans  &trans  &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_COLON  &kp SEMI
 &trans            &kp EXCL          &kp JP_AT        &kp HASH      &trans  &trans  &trans  &trans  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_DQT    &kp JP_SQT
 &trans            &trans            &trans           &trans        &trans  &trans  &trans  &trans                                                  &trans
             >;
@@ -194,8 +194,8 @@
 
         US_SYMBOL {
             bindings = <
-&kp GRAVE  &kp AMPS  &kp STAR   &trans     &trans                  &trans  &kp LPAR  &kp RPAR  &kp PIPE   &kp BSLH
-&kp TILDE  &kp DLLR  &kp PRCNT  &kp CARET  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp COLON  &kp SEMI
+&kp TILDE  &kp AMPS  &kp STAR   &trans     &trans                  &trans  &kp LPAR  &kp RPAR  &kp PIPE   &kp BSLH
+&kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp COLON  &kp SEMI
 &trans     &kp EXCL  &kp AT     &kp HASH   &trans  &trans  &trans  &trans  &kp LBRC  &kp RBRC  &kp DQT    &kp SQT
 &trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans                                 &trans
             >;
